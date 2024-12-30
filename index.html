@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Ninja Gamers The Game Store</title>
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="manifest" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <style>
+        /* Direct Tags */
+        * {
+            margin: 0px;
+            scrollbar-width: thin;
+        }
+
+        body {
+            background-color: white;
+            font-family: "Outfit", sans-serif;
+        }
+
+        header {
+            background-color: #d92413;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Direct Tags */
+
+        /* Header */
+        .headmndiv {
+            background-color: #d92413;
+        }
+
+        /* Search Container & Logo Conatiner*/
+        .logosearch {
+            display: flex;
+            padding-top: 2vh;
+            background-color: #d92413;
+        }
+
+        .headerlogo {
+            height: 55px;
+            overflow: hidden;
+            padding-left: 8vw;
+            position: relative;
+            left: 4vw;
+        }
+
+        /* search start */
+        .searchcont {
+            align-self: center;
+            text-align: center;
+            width: 40vw;
+            border-radius: 30px;
+            background-color: #F8F8F8;
+            height: 7vh;
+            margin: auto;
+            display: flex;
+        }
+
+        .mainform {
+            margin: auto;
+            border-radius: 30px;
+            background-color: #F8F8F8;
+
+        }
+
+        .mainform .mainsearch {
+            width: 23vw;
+            background-color: #F8F8F8;
+            border: hidden;
+            height: 40px;
+
+        }
+
+        .mainform .mainsearch:focus {
+            outline: none;
+        }
+
+        .mainform .mainsearch:hover {
+            border: none;
+        }
+
+        .mainform button {
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            border: none;
+            color: #020D19;
+            margin-left: 1vw;
+            background-color: #d92413;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+
+        .mainform button:hover {
+            background-color: #020D19;
+            color: #d92413;
+        }
+
+        .mainform .vertical-line {
+            display: inline-block;
+            border-left: 1px solid #555;
+            height: 25px;
+            margin: 0 10px;
+            vertical-align: middle;
+            opacity: 20%;
+        }
+
+        /* search start */
+
+        /* Call us Container */
+        .call_us_cont {
+            text-align: left;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            top: 3px;
+            right: 4vw;
+        }
+
+        .call_us_icon {
+            color: white;
+            overflow: hidden;
+            position: relative;
+            top: 2vh;
+            right: 5vw;
+        }
+
+        /* Call us Container */
+
+        /* Account & Cart Icon Container */
+        .account_icon_cont {
+            position: relative;
+            top: 2vh;
+            right: 1vw;
+            overflow: hidden;
+        }
+
+        .account_icon_nav i {
+            font-size: 3vh;
+            padding: 2vh;
+            transition: color 0.3s ease-in-out;
+            color: white;
+        }
+
+        .account_icon_nav i:hover {
+            color: #929292;
+        }
+
+        /* Account & Cart Icon Container */
+
+        /* Search Container & Logo Container*/
+
+        /* Navigation Buttons */
+        .navbtndiv {
+            padding-top: 2vh;
+            padding-bottom: 3vh;
+            padding-left: 24vh;
+            overflow: hidden;
+            background-color: #d92413;
+        }
+
+        .navbtns {
+            padding: 13px;
+            letter-spacing: 1px;
+            font-weight: 400;
+            color: white;
+            border-radius: 2vh;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .navbtns:hover {
+            color: #929292;
+        }
+
+        .hdnav2nddiv {
+            background-color: #d92413;
+        }
+
+        /* Navigation Buttons */
+
+        /* Header */
+
+        /* Marq Sec */
+        .submarqdiv {
+            overflow: hidden;
+            display: flex;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+            padding-left: 23vh;
+        }
+
+        .marqnavbtns {
+            background-color: #d92413;
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: white;
+            margin: 20px;
+            padding: 12px;
+            padding-left: 25px;
+            padding-right: 25px;
+            border-radius: 2vh;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .submarqdiv #sellbtn {
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+
+        .marqnavbtns:hover {
+            background-color: #020D19;
+        }
+
+        #header_whatsapp_icon:hover {
+            color: #25D366;
+        }
+
+        #header_facebook_icon:hover {
+            color: #0866ff;
+        }
+
+        #header_instagram_icon:hover {
+            color: orange;
+        }
+
+        #header_youtube_icon:hover {
+            color: #FF0000;
+        }
+
+        .marqtxt {
+            width: 40%;
+            vertical-align: middle;
+            font-weight: bold;
+            font-size: larger;
+            color: #d92413;
+            padding: 0px;
+        }
+
+        #header_youtube_icon,
+        #header_instagram_icon,
+        #header_facebook_icon,
+        #header_whatsapp_icon {
+            position: relative;
+            transition: background-color, color 0.3s ease-in-out;
+            left: 3vh;
+        }
+
+        .marqaflbtns {
+            color: white;
+            font-size: medium;
+            padding: 8px 10px;
+            margin: 2px;
+            border-radius: 50%;
+            background-color: #d92413;
+            transition: background-color, color 0.3s ease-in-out;
+        }
+
+        #header_youtube_icon {
+            padding: 8px 7px;
+        }
+
+        .marqaflbtns:hover {
+            color: #d92413;
+            background-color: #020D19;
+        }
+
+        /* Marq Sec */
+
+        /* Welcome Text Cont */
+        .welc_cont {
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 2vh;
+        }
+
+        .welc_txt {
+            font-size: xx-large;
+            color: #020D19;
+            font-weight: bolder;
+            letter-spacing: 1px;
+        }
+
+        /* Welcome Text Cont */
+
+        /* Slider */
+        .washi {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .washi2 {
+            width: 100%;
+        }
+
+        .washi .washivideo {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        /* Slider */
+
+        /* First Table Section */
+        .conscardcont {
+            height: 850px;
+            margin: auto;
+        }
+
+        .conscardcont th {
+            width: 520px;
+        }
+
+        .tablegrpimgs {
+            height: 320px;
+            width: 320px;
+        }
+
+        #tblsmcellsstl {
+            padding: 30px;
+        }
+
+        .conscardcont img {
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+            box-shadow:
+                5px 0 10px rgba(0, 0, 0, 0.3),
+                /* Right shadow */
+                0 5px 10px rgba(0, 0, 0, 0.3),
+                /* Bottom shadow */
+                -5px 0 10px rgba(0, 0, 0, 0.3),
+                /*Left shadow */
+                0 -5px 10px rgba(0, 0, 0, 0.3);
+            /* Top shadow */
+        }
+
+        .conscardcont img:hover {
+            transform: scale(1.1);
+        }
+
+        #tablegrpfirsttwo {
+            padding-top: 45px;
+            padding-left: 15px;
+            padding-right: 15px;
+
+        }
+
+        #tablegrpsectwo {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 45px;
+        }
+
+        /* First Table Section */
+
+        /* Featured Posts Txt */
+        .posts_txt_cont {
+            text-align: center;
+        }
+
+        .posts_txt {
+            font-weight: bolder;
+            font-stretch: ultra-expanded;
+            font-size: 30px;
+            color: #d92413;
+            overflow: hidden;
+            position: relative;
+            display: inline-block;
+        }
+
+        .posts_txt::before,
+        .posts_txt::after {
+            content: "";
+            display: inline-block;
+            width: 500px;
+            border-top: 1px solid #d92413;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+
+        /* Featured Posts Txt */
+
+        /* Products Container */
+        .products_cont {
+            text-align: left;
+            overflow: hidden;
+        }
+
+        .products_table {
+            margin: auto;
+            width: 95%;
+            height: 150vh;
+            background-color: #ffffff;
+            box-shadow: 10px 0 15px -5px rgba(8, 0, 0, 0.5), -10px 0 15px -5px rgba(2, 0, 0, 0.5);
+        }
+
+        .products_table td {
+            transition: opacity, 0.3s ease-in-out;
+        }
+
+        .products_table td:hover {
+            opacity: 0.2;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .products_table a {
+            color: #d92413;
+        }
+
+        .products_table tr .item_prices {
+            color: rgb(35, 63, 146);
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        /* Products Container */
+
+        /* Mobile Accessories Banner */
+        .mob_accessories_banner_cont {
+            text-align: center;
+            padding-top: 3%;
+            overflow: hidden;
+            height: 80vh;
+        }
+
+        .mob_accessories_banner_cont2 {
+            text-align: center;
+            padding-top: 3%;
+            overflow: hidden;
+            height: 85vh;
+        }
+
+        .mob_accessories_banner_cont img {
+            height: 500px;
+            width: 1349px;
+            border-radius: 10px;
+            box-shadow:
+                5px 0 10px rgba(0, 0, 0, 0.3),
+                /* Right shadow */
+                0 5px 10px rgba(0, 0, 0, 0.3),
+                /* Bottom shadow */
+                -5px 0 10px rgba(0, 0, 0, 0.3),
+                /*Left shadow */
+                0 -5px 10px rgba(0, 0, 0, 0.3);
+            /* Top shadow */
+            transition: border-color 0.3s ease-in-out;
+            border: 2px solid transparent;
+        }
+
+        .mob_accessories_banner_cont2 img {
+            height: 500px;
+            width: 1349px;
+            border-radius: 10px;
+            box-shadow:
+                5px 0 10px rgba(0, 0, 0, 0.3),
+                /* Right shadow */
+                0 5px 10px rgba(0, 0, 0, 0.3),
+                /* Bottom shadow */
+                -5px 0 10px rgba(0, 0, 0, 0.3),
+                /*Left shadow */
+                0 -5px 10px rgba(0, 0, 0, 0.3);
+            /* Top shadow */
+            transition: border-color 0.3s ease-in-out;
+            border: 2px solid transparent;
+            /* Set initial border color */
+        }
+
+        .mob_accessories_banner_cont img:hover {
+            border-color: #ff0000;
+        }
+
+        .mob_accessories_banner_cont2 .mob_accessories_banner2 {
+            height: 500px;
+            width: 1349px;
+            border-radius: 10px;
+            box-shadow:
+                5px 0 10px rgba(0, 0, 0, 0.3),
+                /* Right shadow */
+                0 5px 10px rgba(0, 0, 0, 0.3),
+                /* Bottom shadow */
+                -5px 0 10px rgba(0, 0, 0, 0.3),
+                /*Left shadow */
+                0 -5px 10px rgba(0, 0, 0, 0.3);
+            /* Top shadow */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .mob_accessories_banner_cont2 .mob_accessories_banner2:hover {
+            transform: scale(1.1);
+            box-shadow:
+                5px 0 10px rgba(0, 0, 0, 0.3),
+                /* Right shadow */
+                0 5px 10px rgba(0, 0, 0, 0.3),
+                /* Bottom shadow */
+                -5px 0 10px rgba(0, 0, 0, 0.3),
+                /*Left shadow */
+                0 -5px 10px rgba(0, 0, 0, 0.3);
+            /* Top shadow */
+        }
+
+        /* Mobile Accessories Banner */
+
+        /* enjoy_digital_games_cont */
+
+        .enjoy_digital_games_cont {
+            text-align: center;
+            padding-bottom: 2vh;
+        }
+
+        .enjoy_digital_games_txt {
+            font-weight: bolder;
+            font-stretch: ultra-expanded;
+            font-size: 40px;
+            color: #d92413;
+            overflow: hidden;
+            position: relative;
+            display: inline-block;
+        }
+
+        .dig_games_banner_table {
+            margin: auto;
+            font-stretch: ultra-expanded;
+            overflow: hidden;
+            letter-spacing: 2px;
+            font-size: larger;
+            text-align: center;
+            width: 50%;
+            scale: 1.1;
+        }
+
+        .dig_games_banner_table td {
+            padding: 15px;
+        }
+
+        .dig_games_banner_table img {
+            border-radius: 10px;
+            height: 290px;
+            width: 290px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .dig_games_banner_table img:hover {
+            transform: scale(1.1);
+        }
+
+        /* enjoy_digital_games_cont */
+
+        /* ps_gift_cards_cont */
+
+        .ps_gift_cards_cont {
+            padding-top: 12vh;
+        }
+
+        .ps_gift_cards_table {
+            margin: auto;
+            width: 65%;
+            height: 70vh;
+            scale: 1.1;
+        }
+
+        .ps_gift_cards_table .banner_td img {
+            height: 500px;
+            width: 500px;
+            box-shadow:
+                5px 0 10px rgba(0, 0, 0, 0.3),
+                /* Right shadow */
+                0 5px 10px rgba(0, 0, 0, 0.3),
+                /* Bottom shadow */
+                -5px 0 10px rgba(0, 0, 0, 0.3),
+                /*Left shadow */
+                0 -5px 10px rgba(0, 0, 0, 0.3);
+            /* Top shadow */
+            transition: scale 0.2s ease-in-out, filter 0.2s ease-in-out;
+        }
+
+        .ps_gift_cards_table .banner_td img:hover {
+            scale: 0.9;
+            filter: blur(1px);
+        }
+
+        .ps_gift_cards_table .title_td {
+            text-align: center;
+        }
+
+        .ps_gift_cards_table img {
+            border-radius: 10px;
+        }
+
+        .ps_gift_cards_table a {
+            color: #d92413;
+        }
+
+        .ps_gift_cards_table td {
+            padding: 1vh;
+        }
+
+        .item_prices {
+            color: rgb(35, 63, 146);
+            font-size: large;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .ps_gift_cards_table .item_links img {
+            display: block;
+            height: 300px;
+            width: 250px;
+        }
+
+        .ps_gift_cards_table .item_td {
+            transition: opacity, 0.3s ease-in-out;
+        }
+
+        .ps_gift_cards_table .item_td:hover {
+            opacity: 0.2;
+        }
+
+        /* ps_gift_cards_cont */
+
+        /* games_products_cont */
+
+        .games_products_cont {
+            padding-top: 4vh;
+            padding-bottom: 10vh;
+            overflow: hidden;
+        }
+
+        .games_products_table {
+            margin: auto;
+            table-layout: fixed;
+            width: 97%;
+            height: 30vh;
+            overflow: hidden;
+            box-shadow:
+                5px 0 10px rgba(0, 0, 0, 0.3),
+                /* Right shadow */
+                0 5px 10px rgba(0, 0, 0, 0.3),
+                /* Bottom shadow */
+                -5px 0 10px rgba(0, 0, 0, 0.3),
+                /*Left shadow */
+                0 -5px 10px rgba(0, 0, 0, 0.3);
+            /* Top shadow */
+        }
+
+        .games_products_table img {
+            height: 30vh;
+            width: 30vh;
+            position: relative;
+            right: 2vh;
+            margin-left: 0px;
+        }
+
+        .games_products_table .games_products_tr .product_items {
+            padding-left: 2vh;
+            padding-bottom: 1vh;
+            padding-right: 1vh;
+            vertical-align: top;
+            text-align: justify;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .games_products_table .games_products_tr .product_items:hover {
+            opacity: 0.2;
+        }
+
+        .item_links {
+            font-size: 14px;
+            color: #d92413;
+        }
+
+        /* games_products_cont */
+
+        /* Footer */
+
+        /* First Container */
+
+        .details_section {
+            background-color: #020D19;
+            padding: 10vh;
+        }
+
+        .details_section table {
+            margin: auto;
+            text-align: left;
+            height: 35vh;
+            width: 80%;
+        }
+
+        .footer_icon_link i {
+            color: #929292;
+            padding: 1vh;
+            padding-top: 2vh;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .footer_icon_link #fb_icon {
+            padding-left: 0px;
+        }
+
+        .footer_icon_link #fb_icon:hover {
+            transition: color 0.2s ease-in-out;
+            color: #0866FF;
+        }
+
+        .footer_icon_link #insta_icon:hover {
+            transition: color 0.2s ease-in-out;
+            color: orange;
+            transform: translate(line);
+        }
+
+        .footer_icon_link #yt_icon:hover {
+            transition: color 0.2s ease-in-out;
+            color: #FF0000;
+            transform: translate(line);
+        }
+
+
+        /* First Container */
+
+        /* Second Container */
+
+        .footer_copyright_cont {
+            background-color: #d92413;
+            padding: 20px;
+            padding-left: 10vh;
+            padding-right: 10vh;
+        }
+
+        .footer_copyright_table {
+            margin: auto;
+            width: 75%;
+        }
+
+        .footer_copyright_table .img_td {
+            width: 100vh;
+        }
+
+        /* Second Container */
+
+        /* Footer */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headmndiv">
+            <!-- Search Div -->
+            <div class="logosearch">
+                <img src="headerlogo.png" alt="Ninja Gamers" title="Ninja Gamers" class="headerlogo">
+                <div class="searchcont">
+                    <form class="mainform" action="/search" method="get">
+                        <span style="font-weight: 300; font-size: medium;">Filter
+                            your experience</span>
+                        <span class="vertical-line"></span>
+                        <input class="mainsearch" type="search" id="search" name="q" placeholder="Search ...."
+                            style="color: rgba(0, 0, 0, 0.7);">
+                        <button class="search_btn" type="submit" id="search" name="q">
+                            <i class="fas fa-search" style="font-weight: 600;"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="call_us_icon">
+                    <i class="fas fa-headset" style="font-size: 40px;"></i>
+                </div>
+                <div class="call_us_cont">
+                    <span style="color: white; font-size: small;">Call Us:</span><br>
+                    <a href="tel:+923098565775" style="font-weight: bolder; font-size: x-large; letter-spacing: 1px;"
+                        title="Click to Call">03098565775</a>
+                </div>
+                <div class="account_icon_cont">
+                    <nav class="account_icon_nav">
+                        <a href="login.html"><i class="fas fa-user"></i></a>
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Search Div -->
+        <div class="navbtndiv">
+            <nav class="headnavbtns">
+                <a class="navbtns" href="index.html">HOME</a>
+                <a class="navbtns" href="products.html">SHOP</a>
+                <a class="navbtns" href="aboutus.html">ABOUT US</a>
+                <a class="navbtns" href="contactus.html">CONTACT US</a>
+                <a class="navbtns" href="faqs.html">FAQ'S</a>
+                <a class="navbtns" href="returnpolicy.html">RETURN POLICY</a>
+                <a class="navbtns" href="news&blog.html">NEWS & BLOG</a>
+            </nav>
+        </div>
+    </header>
+    <!-- After Header Cotent -->
+    <div class="submarqdiv">
+        <nav>
+            <a class="marqnavbtns" id="followUsBtn" href="#" onclick="function1()">FOLLOW US</a>
+            <a class="marqnavbtns" href="#">RATE US</a>
+            <a class="marqnavbtns" href="#" id="sellbtn">SELL</a>
+            <marquee class="marqtxt" behavior="scroll" direction="left" scrollamount="15">
+                <span>Please Confirm prices before placing an order on given contact numbers. Thank You!</span>
+            </marquee>
+            <a href="https://wa.me/+923098565775" target="_blank" class="marqaflbtns" id="header_whatsapp_icon"><i
+                    class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/tipswithcharlie" target="_blank" class="marqaflbtns"
+                id="header_facebook_icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/tipswithcharlie9256?igsh=OHk2bDFvd2QzNzIw" target="_blank"
+                class="marqaflbtns" id="header_instagram_icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@tipswithcharlie?si=raY5_oc7O3m0mfNO" target="_blank" class="marqaflbtns"
+                id="header_youtube_icon"><i class="fab fa-youtube"></i></a>
+        </nav>
+    </div>
+    <div class="welc_cont">
+        <span class="welc_txt">WELCOME TO <span style="color: #d92413;">NINJA GAMERS</span></span>
+    </div>
+    <!-- carousels -->
+
+    <div class="washi">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="6000">
+                    <video class="washivideo" autoplay muted loop>
+                        <source src="1st slider vid.mp4" class="d-block w-100" alt="...">
+                    </video>
+                </div>
+                <div class="carousel-item" data-bs-interval="8000">
+                    <video class="washivideo" autoplay muted loop>
+                        <source src="2nd slider vid.mp4" class="d-block w-100" alt="...">
+                    </video>
+                </div>
+                <div class="carousel-item" data-bs-interval="24000">
+                    <video class="washivideo" autoplay muted loop>
+                        <source src="4th slider vid.mp4" class="d-block w-100" alt="...">
+                    </video>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+                style="background-color: rgba(255,255,255,0.15); opacity: 1; border-radius: 50%; height: 9vh; width: 9vh; margin: auto; position: absolute; left: 5vw; display: block; padding-right: 5px; padding-top: 5px;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+                style="background-color: rgba(255,255,255,0.15); opacity: 1; border-radius: 50%; height: 9vh; width: 9vh; margin: auto; position: absolute; right: 5vw; display: block; padding-left: 5px; padding-top: 5px;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- carousels -->
+    <div class="conscardcont">
+        <table class="conscardcont">
+            <tr>
+                <th id="tblsmcellsstl" rowspan="2"><a href="Banishers Ghosts of New Eden – Ps5.html"
+                        target="_blank"><img src="tableimg1.png"></a></th>
+                <td id="tablegrpfirsttwo"><a href="gamingcontrols.html" target="_blank"><img class="tablegrpimgs"
+                            src="tableimg2.png"></a></td>
+                <td id="tablegrpfirsttwo"><a href="games.html" target="_blank"><img class="tablegrpimgs"
+                            src="tableimg3.png"></a></td>
+            </tr>
+            <tr>
+                <td id="tablegrpsectwo"><a href="giftcards.html" target="_blank"><img class="tablegrpimgs"
+                            src="tableimg4.png"></a></td>
+                <td id="tablegrpsectwo"><a><img class="tablegrpimgs" src="tableimg5.png"></a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="posts_txt_cont">
+        <span class="posts_txt">Featured Products</span>
+    </div>
+    <!-- Products Container -->
+    <div class="products_cont">
+        <table class="products_table">
+            <tr class="products_first_row">
+                <td class="product_items"><a href="Banishers Ghosts of New Eden – Ps5.html" target="_blank"
+                        class="item_links"><img src="products\A-16 Bluetooth Speaker With RGB Led.png"
+                            class="items_thumbnail"><br>A-16
+                        Bluetooth Speaker With RGB Led<span class="item_prices"><br>Rs3,780.00</span></a></td></a>
+                <td class="product_items"><a href="Banishers Ghosts of New Eden – Ps5.html" target="_blank"
+                        class="item_links"><img src="products\Cooling Fan for PS5 Slim Accessories with LED Light.png"
+                            class="items_thumbnail"><br>Cooling Fan for PS5 Slim Accessories with LED Light<span
+                            class="item_prices"><br>Rs3450.00</span></a></td>
+                <td class="product_items"><a href="Banishers Ghosts of New Eden – Ps5.html" target="_blank"
+                        class="item_links"><img src="products\DeadSkull PS5 Carrying Backpack.png"
+                            class="items_thumbnail"><br>DeadSkull PS5
+                        Carrying Backpack<span class="item_prices"><br>Rs14,999.00</span></a></td>
+                <td class="product_items"><a href="Banishers Ghosts of New Eden – Ps5.html" target="_blank"
+                        class="item_links"><img src="products\Dobe Silicone Protective Case For Steam Deck (Black).png"
+                            class="items_thumbnail"><br>Dobe Silicone Protective Case For Steam Deck (Black)<span
+                            class="item_prices"><br>Rs3,499.00</span></a></td>
+                <td class="product_items"><a href="Banishers Ghosts of New Eden – Ps5.html" target="_blank"
+                        class="item_links"><img src="products\Dobe Silicone Protective Kit for PS5 - Blue.png"
+                            class="items_thumbnail"><br>Dobe Silicone Protective Kit for PS5 - Blue<span
+                            class="item_prices"><br>Rs1,300.00</span></a></td>
+            </tr>
+            <tr class="products_first_row">
+                <td class="product_items"><a href="Banishers Ghosts of New Eden – Ps5.html" target="_blank"
+                        class="item_links"><img src="products\G-2388A Bluetooth Speaker With RGB Led.jpeg"
+                            class="items_thumbnail"><br>G-2388A Bluetooth Speaker With RGB Led<span
+                            class="item_prices"><br>Rs3,640.00</span></a></td>
+                <td class="product_items"><a href="Banishers Ghosts of New Eden – Ps5.html" target="_blank"
+                        class="item_links"><img src="products\LIMEIDE T21 Metal Gaming Keyboard with Mouse.png"
+                            class="items_thumbnail"><br>LIMEIDE T21 Metal Gaming Keyboard with Mouse<span
+                            class="item_prices"><br>Rs2,999.00</span></a></td>
+                <td class="product_items"><a href="Banishers Ghosts of New Eden – Ps5.html" target="_blank"
+                        class="item_links" style="color: #d92413;"><img
+                            src="products\Meta Quest 3 128GB₨ 198,000.00.jpg" class="items_thumbnail"></a><br>Meta Quest
+                    3 128GB<span class="item_prices"><br>Rs159,999.00</span></td>
+                <td class="product_items"><a href="Banishers Ghosts of New Eden – Ps5.html" target="_blank"
+                        class="item_links"><img src="products\Nacon Revolution 5 Pro Wireless Controller.png"
+                            class="items_thumbnail"><br>Nacon Revolution 5 Pro Wireless Controller<span
+                            class="item_prices"><br>Rs59,999.00</span></a></td>
+                <td class="product_items"><a href="Banishers Ghosts of New Eden – Ps5.html" target="_blank"
+                        class="item_links"><img src="products\PlayStation 5 Console  Slim (Japan version).jpg"
+                            class="items_thumbnail"><br>PlayStation 5 Console Slim (Japan version)<span
+                            class="item_prices"><br>Rs164,999.00</span></a></td>
+            </tr>
+            <tr class="products_first_row">
+                <td class="product_items"><a href="Banishers Ghosts of New Eden – Ps5.html" target="_blank"
+                        class="item_links"><img src="products\PlayStation PULSE 3D Wireless Headset Midnight Black.jpg"
+                            class="items_thumbnail"><br>PlayStation PULSE 3D Wireless Headset Midnight Black<span
+                            class="item_prices"><br>Rs26,999.00</span></a></td>
+                <td class="product_items"><a href="Banishers Ghosts of New Eden – Ps5.html" target="_blank"
+                        class="item_links"><img src="products\PS5 Multifunctional Cooling Stand TP5-05100.png"
+                            class="items_thumbnail"><br>PS5 Multifunctional Cooling Stand TP5-05100<span
+                            class="item_prices"><br>Rs7,500.00</span></a></td>
+                <td class="product_items"><a href="Banishers Ghosts of New Eden – Ps5.html" target="_blank"
+                        class="item_links"><img src="products\Valve Steam Deck OLED 512GB Gaming Console.png"
+                            class="items_thumbnail"><br>Valve Steam Deck OLED 512GB Gaming Console<span
+                            class="item_prices"><br>Rs215,999.00</span></a></td>
+                <td class="product_items"><a href="Banishers Ghosts of New Eden – Ps5.html" target="_blank"
+                        class="item_links"><img src="products\Xbox Series S 1TB (Black)₨ 129,999.00.jpg"
+                            class="items_thumbnail"><br>Xbox
+                        Series S 1TB (Black)<span class="item_prices"><br>Rs119,999.00</span></a></td>
+                <td class="product_items"><a href="Banishers Ghosts of New Eden – Ps5.html" target="_blank"
+                        class="item_links"><img src="products\Xbox Series S Console  with 3 month Game Pass.jpg"
+                            class="items_thumbnail"><br>Xbox Series S Console with 3 month Game Pass<span
+                            class="item_prices"><br>Rs96,999.00</span></a></td>
+            </tr>
+        </table>
+    </div>
+    <!-- Products Container -->
+
+    <!-- Collection Banner Container -->
+    <div class="mob_accessories_banner_cont">
+        <a href="mobileaccessories.html" target="_blank"><img src="our_latest_accessories_collection.png"
+                class="mob_accessories_banner"></a>
+    </div>
+    <div class="mob_accessories_banner_cont2">
+        <a href="news&blog.html" target="_blank"><img src="our_latest_accessories_collection2.png"
+                class="mob_accessories_banner2"></a>
+    </div>
+    <!-- Collection Banner Container -->
+    <div class="enjoy_digital_games_cont">
+        <span class="enjoy_digital_games_txt">Enjoy Our Latest Digital Games</span>
+    </div>
+    <div class="dig_games_banner_cont">
+        <table class="dig_games_banner_table">
+            <tr class="dig_games_banner_headings">
+                <th class="dig_games_banner_txt" style="color: #020D19;">PS Digital Games</th>
+                <th class="dig_games_banner_txt" style="color: #020D19;">Xbox Digital Games</th>
+                <th class="dig_games_banner_txt" style="color: #020D19;">PC Digital Games/th>
+            </tr>
+            <tr class="dig_games_banner_images_row">
+                <td class="dig_games_banner_images" id="frst_img"><a href="psdigitalgames.html" target="_blank"
+                        style="color: #d92413;"><img src="ps_digital_games_banner.png"></a></td>
+                <td class="dig_games_banner_images"><a href="xboxdigitalgames.html" target="_blank"
+                        style="color: #d92413;"><img src="xbox_digital_games_banner.png"></a></td>
+                <td class="dig_games_banner_images"><a href="pcdigitalgames.html" target="_blank"
+                        style="color: #d92413;"><img src="pc_digital_games_banner.png"></a></td>
+            </tr>
+        </table>
+    </div>
+    <!-- Gift Banner Container -->
+    <div class="ps_gift_cards_cont">
+        <table class="ps_gift_cards_table">
+            <tr>
+                <td rowspan="2" class="banner_td" style="padding: 2vh;"><a href="products.html" target="_blank"
+                        class="banner_link"><img src="ps-gift-card-banner.png" alt="ps-gift-card"></a></td>
+                <td colspan="2" class="title_td"><span
+                        style="font-weight: bolder; font-size: x-large; color: #020D19;">PLAY STATION GIFT
+                        CARDS</span></td>
+            </tr>
+            <tr>
+                <td class="item_td" style="vertical-align: top; text-align: left; padding: 0px;"><a
+                        href="Banishers Ghosts of New Eden – Ps5.html" target="_blank" class="item_links"><img
+                            src="ps-gift-card-$100.jpg" alt="ps-gift-card-$100"><br><span style="font-size: 14px;">$100
+                            PlayStation Store Gift Card (USA) [Digital
+                            Code]</span><br><span class="item_prices">Rs 27,944</span></a></td>
+                <td class="item_td" style="vertical-align: top; padding: 0px;"><a
+                        href="Banishers Ghosts of New Eden – Ps5.html" target="_blank" class="item_links"><img
+                            src="ps-gift-card-$50.jpg" alt="ps-gift-card-$50"><br><span style="font-size: 14px;">$50
+                            PlayStation Store Gift Card (USA) [Digital Code]</span><br><span class="item_prices">Rs
+                            13,972</span></a></td>
+            </tr>
+        </table>
+    </div>
+    <!-- XBOX Gift Card -->
+    <div class="ps_gift_cards_cont">
+        <table class="ps_gift_cards_table">
+            <tr>
+                <td colspan="2" class="title_td"><span
+                        style="font-weight: bolder; font-size: x-large; color: #020D19;">XBOX GIFT
+                        CARDS</span></td>
+                <td rowspan="2" class="banner_td" style="padding: 2vh;"><a href="products.html" target="_blank"
+                        class="banner_link"><img src="xbox-gift-card-banner.png" alt="xbox-gift-card"
+                            class="xbox_gift_card_banner_img"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="item_td" style="vertical-align: top; text-align: left; padding: 0px;"><a href="#"
+                        class="item_links"><img src="xbox-gift-card-9months.jpg" alt="xbox-gift-card-9months"><br><span
+                            style="font-size: 14px;">Xbox/PC Game Pass Ultimate: 9 Months Membership</span><br><span
+                            class="item_prices">Rs 8,999</span></a></td>
+                <td class="item_td" style="vertical-align: top; padding: 0px;"><a href="#" class="item_links"><img
+                            src="xbox-gift-card-5months.jpg" alt="xbox-gift-card-5months"><br><span
+                            style="font-size: 14px;">Xbox/PC Game Pass Ultimate: 5 Months Membership</span><br><span
+                            class="item_prices">Rs 6,999</span></a></td>
+            </tr>
+        </table>
+    </div>
+    <!-- Steam Gift Card -->
+    <div class="ps_gift_cards_cont" style="padding-bottom: 5vh;">
+        <table class="ps_gift_cards_table">
+            <tr>
+                <td rowspan="2" class="banner_td" style="padding: 2vh;"><a href="products.html" target="_blank"
+                        class="banner_link"><img src="steam-gift-card-banner.png" alt="steam-gift-card-banner"></a></td>
+                <td colspan="2" class="title_td"><span
+                        style="font-weight: bolder; font-size: x-large; color: #020D19;">STEAM GIFT
+                        CARDS</span></td>
+            </tr>
+            <tr>
+                <td class="item_td" style="vertical-align: top; text-align: left; padding: 0px;">
+                    <a href="#" class="item_links">
+                        <img src="steam-gift-card-$50.gif" alt="steam-gift-card-$50"><br>
+                        <span style="font-size: 14px;">
+                            Steam Gift Card - $50
+                        </span><br>
+                        <span class="item_prices">
+                            Rs 17,000
+                        </span>
+                    </a>
+                </td>
+                <td class="item_td" style="vertical-align: top; padding: 0px;">
+                    <a href="#" class="item_links">
+                        <img src="steam-gift-card-$35.png" alt="steam-gift-card-$35"><br>
+                        <span style="font-size: 14px;">
+                            Steam Gift Card - $35
+                        </span><br>
+                        <span class="item_prices">
+                            Rs 12,000
+                        </span>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Digital Games Products Section -->
+
+    <div class="games_products_cont">
+
+        <table class="games_products_table">
+            <tr>
+                <td colspan="7">
+                    <div class="enjoy_digital_games_cont">
+                        <span class="enjoy_digital_games_txt"">DIGITAL GAMES</span>
+                    </div>
+                </td>
+            </tr>
+            <tr class=" games_products_tr">
+                <td class="product_items"><a href="https://youtube.com" class="item_links"><img
+                            src="homepage digital games products\Final Fantasy VII Rebirth – PlayStation 5.png"
+                            class="items_thumbnail"><br>Final Fantasy VII Rebirth – PlayStation 5<span
+                            class="item_prices"><br>Rs17,449.00</span></a></td></a>
+                <td class="product_items"><a href="#" class="item_links"><img
+                            src="homepage digital games products\Grand Theft Auto The Trilogy – Nintendo Switch (Digital Game).png"
+                            class="items_thumbnail"><br>Grand Theft Auto The Trilogy – Nintendo Switch (Digital
+                        Game)<span class="item_prices"><br>Rs6,499</span></a></td>
+                <td class="product_items"><a href="#" class="item_links"><img
+                            src="homepage digital games products\NBA 2K23 – PlayStation 5 (Used).jpg"
+                            class="items_thumbnail"><br>NBA 2K23 – PlayStation 5 (Used)<span
+                            class="item_prices"><br>Rs6,500</span></a></td>
+                <td class="product_items"><a href="#" class="item_links"><img
+                            src="homepage digital games products\NHL 19- PlayStation 4 (Used).png"
+                            class="items_thumbnail"><br>NHL 19- PlayStation 4 (Used)<span
+                            class="item_prices"><br>Rs2,000</span></a></td>
+                <td class="product_items"><a href="#" class="item_links"><img
+                            src="homepage digital games products\Suicide Squad Kill the Justice League Standard Edition – Ps5.png"
+                            class="items_thumbnail"><br>Suicide Squad Kill the Justice League Standard Edition –
+                        Ps5<span class="item_prices"><br>Rs15,500</span></a></td>
+                <td class="product_items"><a href="#" class="item_links"><img
+                            src="homepage digital games products\Grand Theft Auto The Trilogy – Nintendo Switch (Digital Game).png"
+                            class="items_thumbnail"><br>Grand Theft Auto The Trilogy – Nintendo Switch (Digital
+                        Game)<span class="item_prices"><br>Rs6,499</span></a></td>
+                <td class="product_items"><a href="https://youtube.com" class="item_links"><img
+                            src="homepage digital games products\Final Fantasy VII Rebirth – PlayStation 5.png"
+                            class="items_thumbnail"><br>Final Fantasy VII Rebirth – PlayStation 5<span
+                            class="item_prices"><br>Rs17,449.00</span></a></td></a>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        function function1() {
+            swal("Enter Your Email:", {
+                content: "input",
+            })
+                .then((value) => {
+                    swal(`Subscribed Successfuly.`);
+                });
+        }
+
+    </script>
+
+</body>
+<footer style="background-color: #020D19;">
+    <div class="details_section">
+        <table class="details_section_table">
+            <tr style="height: 7vh;">
+                <td style="width: 26%;">
+                    <img src="footer-logo-transparent.png" style="height: 5vh;">
+                </td>
+                <td style="padding-left: 15vh; width: 50vh;">
+                    <span style="font-weight: bold; font-size: large; color: white;">
+                        Follow Us On:
+                    </span>
+                </td>
+                <td style="padding-left: 1vh; padding-right: 1vh;">
+                    <span style="color: #d92413; font-weight: bolder; font-size: larger;">LAHORE</span>
+                </td>
+                <td style="padding-left: 1vh; padding-right: 1vh;">
+                    <span style="color: #d92413; font-weight: bolder; font-size: larger;">SIALKOT</span>
+                </td>
+            </tr>
+            <tr style="vertical-align: top;">
+                <td style="text-align: justify;">
+                    <span style="color: #929292; font-size: small; font-weight: 500;">
+                        Ninja Gamers The Game Store is the one of the most viral Game Shop that provides you wide range
+                        of games and their accessories in very reasonable cost.
+                    </span>
+                </td>
+                <td style="padding-left: 15vh; width: 37vh; font-size: large;">
+                    <a href="https://www.facebook.com/tipswithcharlie" target="_blank" class="footer_icon_link">
+                        <i class="fab fa-facebook" id="fb_icon"></i>
+                    </a>
+                    <a href="https://www.instagram.com/tipswithcharlie9256?igsh=OHk2bDFvd2QzNzIw" target="_blank"
+                        class="footer_icon_link">
+                        <i class="fab fa-instagram" id="insta_icon"></i>
+                    </a>
+                    <a href="https://youtube.com/@tipswithcharlie?si=raY5_oc7O3m0mfNO" target="_blank"
+                        class="footer_icon_link">
+                        <i class="fab fa-youtube" id="yt_icon"></i>
+                    </a>
+                </td>
+                <td style="padding-left: 1vh; padding-right: 1vh;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435519.2273943813!2d74.00472901005566!3d31.4831036647255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1709664235940!5m2!1sen!2s"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td style="padding-left: 1vh; padding-right: 1vh;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d215397.94014112744!2d74.37758569219358!3d32.48358120097391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391eea5674db6cfd%3A0xa8d03983946d4744!2sSialkot%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1709664409054!5m2!1sen!2s"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="footer_copyright_cont">
+        <table class="footer_copyright_table">
+            <tr>
+                <td class="img_td"><img src="footer-payment-methods-image.png"></td>
+                <td><span style="color: white; font-size: small; letter-spacing: 1px;">&copy; 2024 Ninja Gamers. All
+                        Rights Reserved</span></td>
+            </tr>
+        </table>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Ensure you have the correct Font Awesome version -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Website</title>
+
+    <style>
+
+/* icons */
+.footer_icons_cont {
+    position: relative;
+    display: flex;
+}
+
+.footer_icons_cont li {
+    position: relative;
+    list-style: none;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+.footer_icons_cont li a {
+    text-decoration: none;
+    color: #929292;
+}
+
+.footer_icons_cont li a .fab {
+    font-size: 1em;
+}
+
+.footer_icons_cont li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+.footer_icons_cont li:nth-child(1)::before {
+    background-color: #1877F2;
+}
+
+.footer_icons_cont li:nth-child(2)::before {
+    background-color: #fa7e1e;
+}
+
+.footer_icons_cont li:nth-child(3)::before {
+    background-color: #ff0000;
+}
+
+.footer_icons_cont li:hover::before {
+    height: 100%;
+}
+/* icons */
+
+
+    </style>
+</head>
+<body>
+    <ul class="footer_icons_cont">
+        <li><a href="https://www.facebook.com/tipswithcharlie"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li id="insta_icon"><a href="https://www.instagram.com/tipswithcharlie9256?igsh=OHk2bDFvd2QzNzIw"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://youtube.com/@tipswithcharlie?si=raY5_oc7O3m0mfNO"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+    </ul>
+</body>
+</html>
